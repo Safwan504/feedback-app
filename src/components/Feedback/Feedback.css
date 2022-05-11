@@ -1,10 +1,10 @@
-.FeedbackUI{
+.FeedbackUI {
     background-color: rgb(204, 201, 243);
     min-height: 100vh;
     padding-top: 20px;
 }
 
-.feedbackItems{
+.feedbackItems {
     background-color: #212529;
     max-width: 70%;
     color: #f5d0d0;
@@ -15,12 +15,18 @@
     position: relative;
     transition: all 0.4s ease-in-out;
 }
-.feedbackItems:hover{
+
+textarea {
+    max-width: 100%;
+}
+
+.feedbackItems:hover {
     max-width: 71%;
     cursor: pointer;
     box-shadow: 5px 10px 10px gray;
 }
-.feedbackRating{
+
+.feedbackRating {
     background-color: #db2846;
     width: 55px;
     height: 35px;
@@ -30,7 +36,8 @@
     left: 50%;
     transform: translate(-50%);
 }
-.close{
+
+.close {
     position: absolute;
     top: 5px;
     right: 10px;
@@ -38,19 +45,21 @@
     color: rgb(168, 204, 252);
     border: none;
 }
-.feedbackText{
+
+.feedbackText {
     padding: 15px 5px 5px 10px;
 }
-.customRow{
+
+.customRow {
     padding: 10px 0;
 }
 
-.submitBtn:disabled{
+.submitBtn:disabled {
     background-color: #423e3e;
     color: #fff;
 }
 
-ul li{
+ul li {
     list-style-type: none;
     border: none;
     border-radius: 50%;
@@ -60,16 +69,19 @@ ul li{
     background-color: #fff;
     transition: all .4s ease-in-out;
 }
-ul li:hover{
+
+ul li:hover {
     background-color: #db2846;
     color: #fff;
     transform: scale(1.1);
 }
+
 @media only screen and (max-width: 550px) {
-    .feedbackItems{
-      max-width: 75%;
+    .feedbackItems {
+        max-width: 75%;
     }
-    .feedbackItems:hover{
+
+    .feedbackItems:hover {
         max-width: 76%;
     }
-  }
+}
