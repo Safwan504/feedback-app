@@ -36,7 +36,7 @@ const FeedbackForm = ({ handleFeedback }) => {
         <div className="container">
             <div className="row d-flex justify-content-center mb-5">
                 <div className="text-center feedbackItems">
-                    <h4 className="mb-2">How Would You Like To Rate Us.</h4>
+                    <h4>How Would You Like To Rate Us.</h4>
                     <Ratings select = {(rate) => setRating(rate) }></Ratings>
                     <form onSubmit={handleSubmit}>
                         <textarea
