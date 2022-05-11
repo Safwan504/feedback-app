@@ -17,7 +17,7 @@
 }
 
 textarea {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .feedbackItems:hover {
@@ -74,14 +74,4 @@ ul li:hover {
     background-color: #db2846;
     color: #fff;
     transform: scale(1.1);
-}
-
-@media only screen and (max-width: 550px) {
-    .feedbackItems {
-        max-width: 75%;
-    }
-
-    .feedbackItems:hover {
-        max-width: 76%;
-    }
 }
