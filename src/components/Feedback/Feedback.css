@@ -1,0 +1,75 @@
+.FeedbackUI{
+    background-color: rgb(204, 201, 243);
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.feedbackItems{
+    background-color: #212529;
+    max-width: 70%;
+    color: #f5d0d0;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.feedbackItems:hover{
+    max-width: 71%;
+    cursor: pointer;
+    box-shadow: 5px 10px 10px gray;
+}
+.feedbackRating{
+    background-color: #db2846;
+    width: 55px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    color: rgb(168, 204, 252);
+    border: none;
+}
+.feedbackText{
+    padding: 15px 5px 5px 10px;
+}
+.customRow{
+    padding: 10px 0;
+}
+
+.submitBtn:disabled{
+    background-color: #423e3e;
+    color: #fff;
+}
+
+ul li{
+    list-style-type: none;
+    border: none;
+    border-radius: 50%;
+    padding: 4px 10px;
+    margin: 7px 7px;
+    color: #000;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+}
+ul li:hover{
+    background-color: #db2846;
+    color: #fff;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 550px) {
+    .feedbackItems{
+      max-width: 75%;
+    }
+    .feedbackItems:hover{
+        max-width: 76%;
+    }
+  }
